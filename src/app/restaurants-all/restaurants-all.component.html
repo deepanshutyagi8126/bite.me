@@ -1,0 +1,871 @@
+<app-header2></app-header2>
+
+<section>
+    <div class="RestaurantArea RestaurantPage">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="FilterBox">
+
+                        <div class="Search">
+                            <span><i class="fa fa-search"></i></span>
+                            <input type="text" placeholder="Search by Restaurants">
+                        </div>
+
+                        <h2>Filter By</h2>
+
+                        <aside>
+                            <h4>Rating</h4>
+                            <ol class="Radios">
+                                <li>
+                                    <input type="radio" name="rating">
+                                    <span><i class="fa fa-star"></i> 1</span>
+                                </li>
+                                <li>
+                                    <input type="radio" name="rating">
+                                    <span><i class="fa fa-star"></i> 2</span>
+                                </li>
+                                <li>
+                                    <input type="radio" name="rating">
+                                    <span><i class="fa fa-star"></i> 3</span>
+                                </li>
+                                <li>
+                                    <input type="radio" name="rating">
+                                    <span><i class="fa fa-star"></i> 4</span>
+                                </li>
+                                <li>
+                                    <input type="radio" name="rating">
+                                    <span><i class="fa fa-star"></i> 5</span>
+                                </li>
+                            </ol>
+                        </aside>
+
+                        <aside>
+                            <h4>Delivery Time <span>15 Min - 25 Min</span></h4>
+                           <div class="rangeSilder">
+                            <ng5-slider [(value)]="value3" [(highValue)]="highValue3" [options]="options"></ng5-slider>
+                           </div>
+                        </aside>
+
+                        <aside>
+                            <h4>Distance <span>0 Km - 5 Km</span></h4>
+                            <div class="rangeSilder">
+                                <ng5-slider [(value)]="value4" [(highValue)]="highValue4" [options]="options"></ng5-slider>
+                               </div>
+                        </aside>
+
+                        <aside>
+                            <h4>Dietary Needs </h4>
+                            <ul class="Checkboxx">
+                                <li>
+                                    <input type="checkbox">
+                                    <span>Vegetarian</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <span>Vegan</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <span>Gluten Free</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <span>Keto</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <span>Paleo</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <span>Kosher</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox">
+                                    <span>Halal</span>
+                                </li>      
+                            </ul>
+                        </aside>
+
+                        <div id="accordion"> 
+                            <div class="card">
+                                <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
+                                    <h5>Offers</h5>
+                                </div>
+                                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                        Lorem ipsum..
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header collapsed" data-toggle="collapse" href="#collapseTwo">
+                                    <h5>Cuisines</h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                    <div class="card-body">
+                                    Lorem ipsum..
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-9 RestaurantRight">
+                    
+                        
+                    <div class="RestaurantHead">
+                        <h2>All Restaurants </h2>
+                    </div>
+
+                    <div class="scrollbar" id="style-4">
+                        <div class="force-overflow">
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a >Burger King</a></h3>
+                                <h5>Burger, Whoppers, Sides, Breakfast</h5>
+                                <h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                                <a href="javascript:void(0)"><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a >Burger King</a></h3>
+                                <h5>Burger, Whoppers, Sides, Breakfast</h5>
+                                <h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a>Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5><h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)"><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a  >Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5>
+                                        <h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+ 
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a  >Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5><h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a  >Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5><h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a>Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5><h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a>Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5><h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a>Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5><h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a>Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5><h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a>Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5><h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a>Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5><h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a>Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5><h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a>Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5><h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a>Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5><h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a>Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5><h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a>Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5><h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a>Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5><h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a>Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5><h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a>Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5><h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a>Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5><h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a>Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5><h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a>Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5><h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a>Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5><h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a>Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5><h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+                    <div class="RestaurantBox outlineAll" [routerLink]="['/restaurants-details']">
+                        <figure>
+                            <img src="assets/img/Burger-logo.png">
+                        </figure>
+                        <figcaption>
+                            <div>
+                                <h3><a>Burger King</a></h3>
+                                        <h5>Burger, Whoppers, Sides, Breakfast</h5><h4><img src="assets/img/star.png"> 4.9 <span class="reviewAll" [routerLink]="['/review']">(592 Reviews)</span></h4>
+                        
+
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/clock.png">
+                                        25 Min
+                                    </li>
+                                    <li>
+                                        <span class="Price">AED 50.00</span> 
+                                        <span class="Title">Minimum Order Value</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <aside>
+                              <a href="javascript:void(0)" ><i class="fa fa-heart"></i></a>
+                                <h6><img src="assets/img/scooter.png"> AED 5.00</h6>
+                                <p>Delivery fee</p>
+                            </aside>
+                        </figcaption>
+                    </div>
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-footer></app-footer>

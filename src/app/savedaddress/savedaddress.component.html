@@ -1,0 +1,292 @@
+<app-header2></app-header2>
+
+<section class="offers Account paddingTop">
+    <div class="container">
+        <div class="offerInner Accountinner">
+            <h2 class="heading">My Account</h2>
+        </div>
+        <div class="accountDetails">
+            <div class="row">
+                <div class="col-sm-3">
+                    <ul class="nav nav-tabs tabMenu">
+                        <li class="active"><a   [routerLink]="['/accountinfo']" >Account Info</a></li>
+                        <li><a [routerLink]="['/favourites']">Favourites</a></li>
+                        <li><a class="active" [routerLink]="['/savedaddress']">Saved Addresses </a></li>
+                        <li><a [routerLink]="['/paymentcard']">Payment Card</a></li>
+                    </ul>
+                    <div class="orderDett">
+                        <a href="javascript:void(0)" class="btnss btnHover" routerLink="/myorder">My Orders <span
+                                style="margin-left: 5px;"><i class="fa fa-angle-right"></i></span></a>
+                    </div>
+                </div>
+            
+                <div class="col-sm-9">
+
+                    <div class="allTabs">
+                        <div class="tab-content">
+                         
+                      
+
+                                <div class="saveAddress">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="radio radioHe">
+                                                <input id="radio-1" name="radio" type="radio" checked>
+                                                <label for="radio-1" class="radio-label">
+                                                    <span class="addresDettails">
+                                                        <h2>Home 
+                                                            <span class="edit"  data-toggle="modal"
+                                                            data-target="#myModaltrash"><img src="assets/img/trash.svg"
+                                                            alt="trash" style="width:20px;margin-left: 10px;"></span>
+                                                            <span class="edit"  data-toggle="modal"
+                                                            data-target="#myModal5"><img src="assets/img/pen.svg"
+                                                                    alt="pen"></span>
+                                                                 
+                                                        </h2>
+                                                        <p><img src="assets/img/edit.svg" alt="edit">
+                                                            52 Riverside St.
+                                                            Norcross, GA 30092
+                                                        </p>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+
+                                            <div class="radio radioHe">
+                                                <input id="radio-2" name="radio" type="radio">
+                                                <label for="radio-2" class="radio-label">
+                                                    <span class="addresDettails">
+                                                        <h2>Office 
+                                                            <span class="edit"  data-toggle="modal"
+                                                            data-target="#myModaltrash"><img src="assets/img/trash.svg"
+                                                            alt="trash" style="width:20px;margin-left: 10px;"></span>
+                                                            <span class="edit"  data-toggle="modal"
+                                                            data-target="#myModal5"><img src="assets/img/pen.svg"
+                                                            alt="pen"></span>
+                                                             
+                                                        </h2>
+                                                        <p><img src="assets/img/edit.svg" alt="edit">
+                                                            52 Riverside St.
+                                                            Norcross, GA 30092
+                                                        </p>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="saveBtn">
+                                        <a href="javascript:void(0)" class="btnss btnHover" data-toggle="modal"
+                                            data-target="#myModalad">Add New Address</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<app-footer></app-footer>
+<div class="modal modalNew" id="myModalad">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 class="modal-title">Choose Your Location</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div class="modal-body modalBody">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27933.01775425541!2d77.72781870000001!3d28.939115449999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1615536051980!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="modal-footer">
+                <div class="row flexCss widthhund">
+                    <div class="col-sm-7">
+
+                        <div class="form-group loginDet">
+                            <span><img src="assets/img/loc.svg" alt="email"></span>
+
+                            <input type="text" class="form-control paddingAll" placeholder="A-44, Sector 44, Noida"
+                                value="A-44, Sector 44, Noida">
+
+                        </div>
+                        <div class="form-group loginDet ">
+
+                            <input type="text" class="form-control paddingAll" placeholder="Building/Apartment No.">
+
+
+                        </div>
+                    </div>
+                    <div class="col-sm-5 btnBot">
+                        <button class="btnss btnHover" data-toggle="modal" data-target="#myModal2"
+                            data-dismiss="modal">Set Location</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal modalNew2" id="myModal2">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-body modalBody modalBody2">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="modalBod">
+                    <h2>Set Location As</h2>
+                    <p>A-44, Sector 44, Noida</p>
+                    <div class="form-group loginDet " style="padding-left: 0px;">
+                        <input type="text" class="form-control paddingAll paddLeff" placeholder="Name You Address"
+                            style="text-align: center;">
+
+                    </div>
+                    <div class="radioNew">
+                        <div class="radio ">
+                            <input id="radio-12" name="radio1" type="radio" checked>
+                            <label for="radio-12" class="radio-label">
+                                Home
+                            </label>
+                        </div>
+
+
+                        <div class="radio ">
+                            <input id="radio-21" name="radio1" type="radio">
+                            <label for="radio-21" class="radio-label">
+                                Office
+                            </label>
+                        </div>
+
+                        <div class="radio">
+                            <input id="radio-25" name="radio1" type="radio">
+                            <label for="radio-25" class="radio-label clickShow">
+                                Other
+                            </label>
+                        </div>
+                    </div>
+           
+                    <div class="centerBtn">
+                        <a href="javascript:void(0)" class="btns" data-dismiss="modal" style=" font-weight: 700;">Save</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modalNew" id="myModal5">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 class="modal-title">Edit Your Location</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div class="modal-body modalBody">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27933.01775425541!2d77.72781870000001!3d28.939115449999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1615536051980!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="modal-footer">
+                <div class="row flexCss widthhund">
+                    <div class="col-sm-7">
+
+                        <div class="form-group loginDet">
+                            <span><img src="assets/img/loc.svg" alt="email"></span>
+
+                            <input type="text" class="form-control paddingAll" placeholder="A-44, Sector 44, Noida"
+                                value="A-44, Sector 44, Noida">
+
+                        </div>
+                        <div class="form-group loginDet ">
+
+                            <input type="text" class="form-control paddingAll" placeholder="Building/Apartment No.">
+
+
+                        </div>
+                    </div>
+                    <div class="col-sm-5 btnBot">
+                        <button class="btnss btnHover" data-toggle="modal" data-target="#myModal6"
+                            data-dismiss="modal">Update Location</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal modalNew2" id="myModal6">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-body modalBody modalBody2">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="modalBod">
+                    <h2>Set Location As</h2>
+                    <p>A-44, Sector 44, Noida</p>
+                    <div class="form-group loginDet " style="padding-left: 10px;">
+                        <input type="text" class="form-control paddingAll" placeholder="Name You Address"
+                            style="text-align: center;">
+
+                    </div>
+                    <div class="radioNew">
+                        <div class="radio">
+                            <input id="radio-102" name="radio12" type="radio" checked>
+                            <label for="radio-102" class="radio-label">
+                                Home
+                            </label>
+                        </div>
+
+
+                        <div class="radio">
+                            <input id="radio-201" name="radio12" type="radio">
+                            <label for="radio-201" class="radio-label">
+                                Office
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input id="radio-2010" name="radio12" type="radio">
+                            <label for="radio-2010" class="radio-label labDrop">
+                                Other
+                            </label>
+                        </div>
+                        
+                    </div>
+           
+                    <div class="centerBtn">
+                        <a href="javascript:void(0)" class="btns" data-dismiss="modal">Update</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modalNew modalNew44" id="myModaltrash">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 class="modal-title">Are you sure ,you want to remove this  address</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div class="modal-body modalBody">
+                <div class=" btnBot btnBotmodd">
+                    <button class="btnss btnHover" data-dismiss="modal">Yes</button>
+                    <button class="btnss btnHover" data-dismiss="modal">No</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

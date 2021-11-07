@@ -1,0 +1,128 @@
+<app-header2></app-header2>
+
+<section class="offers Account paddingTop">
+    <div class="container">
+        <div class="offerInner Accountinner">
+            <h2 class="heading">My Account</h2>
+        </div>
+        <div class="accountDetails">
+            <div class="row">
+                <div class="col-sm-3">
+                    <ul class="nav nav-tabs tabMenu">
+                        <li class="active"><a   [routerLink]="['/accountinfo']" >Account Info</a></li>
+                        <li><a   [routerLink]="['/favourites']">Favourites</a></li>
+                        <li><a [routerLink]="['/savedaddress']">Saved Addresses </a></li>
+                        <li><a class="active" [routerLink]="['/paymentcard']">Payment Card</a></li>
+                    </ul>
+                    <div class="orderDett">
+                        <a href="javascript:void(0)" class="btnss btnHover" routerLink="/myorder">My Orders <span
+                                style="margin-left: 5px;"><i class="fa fa-angle-right"></i></span></a>
+                    </div>
+                </div>
+            
+                <div class="col-sm-9">
+
+                    <div class="allTabs">
+                        <div class="tab-content">
+                     
+         
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="cardDetail" style="background-image: url('assets/img/card1.svg')">
+                                            <h2>Dwayne Johnson</h2>
+                                            <p>XXXX XXXX XXXX 4545</p>
+                                            <span class="Delete"  data-toggle="modal" data-target="#myModal10"><img src="assets/img/trash.svg" alt="delete"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="cardDetail" style="background-image: url('assets/img/card2.svg')">
+                                            <h2>Dwayne Johnson</h2>
+                                            <p>XXXX XXXX XXXX 4545</p>
+                                            <span class="Delete"  data-toggle="modal" data-target="#myModal10"><img src="assets/img/trash.svg" alt="delete"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cardBtn">
+                                    <a href="javascript:void(0)" class="btns btnHover" data-toggle="modal" data-target="#myModal3"
+                                    >Add New Card</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+        </div>
+
+    </div>
+</section>
+<app-footer></app-footer>
+
+
+
+<div class="modal modalNew" id="myModal3">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 class="modal-title">Add New Card</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div class="modal-body modalBody">
+           <div class="row" style="align-items: flex-end;margin-bottom: 0;">
+               <div class="col-sm-7">
+                <div class="form-group loginDet paddnew">
+
+                    <input type="text" class="form-control paddingAll" placeholder="Dwayne Johnson"
+                        value="">
+
+                </div>
+                <div class="form-group loginDet paddnew">
+
+                    <input type="number" class="form-control paddingAll" placeholder="90908787"
+                        value="">
+
+                </div>
+                <div class="form-group  paddnew flexCvv">
+                 <div class="form-group loginDet paddnew">
+                    <input type="text" class="form-control paddingAll" placeholder="CVV"
+                    value="">
+                 </div>
+                  <div class="form-group loginDet paddnew">
+                    <input type="text" class="form-control paddingAll" placeholder="Expire Date"
+                    value="">
+                  </div>
+
+                </div>
+               </div>
+               <div class="col-sm-5 btnBot">
+                <button class="btnss btnHover" data-dismiss="modal">Save</button>
+            </div>
+           </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal modalNew modalNew44" id="myModal10">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 class="modal-title">Are you sure ,you want to remove this card ?</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div class="modal-body modalBody">
+                <div class=" btnBot btnBotmodd">
+                    <button class="btnss btnHover" data-dismiss="modal">Yes</button>
+                    <button class="btnss btnHover" data-dismiss="modal">No</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,1083 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+.Radio {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.Radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+.Radio span {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid #d7d9db;
+}
+.Radio span:before {
+    content: "";
+    position: absolute;
+    background-color: #d7d9db;
+    width: 10px;
+    height: 10px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+}
+.Radio input:checked ~ span {
+    border-color: #ea1f97;
+}
+.Radio input:checked ~ span:before {
+    background-color: #ea1f97;
+}
+
+.CheckBox {
+    position: relative;
+    display: inline-block;
+}
+.CheckBox input {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+.CheckBox .Check {
+    width: 25px;
+    height: 25px;
+    display: block;
+    border: 1px solid #ddd;
+    position: relative;
+}
+.CheckBox .Check:before {
+    content: "";
+    left: 9px;
+    top: 5px;
+    width: 6px;
+    height: 12px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    transform: rotate(50deg);
+    position: absolute;
+    display: none;
+}
+.CheckBox input:checked ~ .Check {
+    background-color: #ea1f97;
+    border-color: #ea1f97;
+}
+.CheckBox input:checked ~ .Check:before {
+    display: block;
+}
+
+.headerRight ul li a.Account {
+    background: var(--colorWhite);
+    padding: 10px 35px;
+    border-radius: 50px;
+    font-weight: 500;
+    color: #ea1f97;
+    border: 2px solid #ea1f97;
+    font-family: Roboto;
+}
+
+.mypastOrder .owl-item {
+    padding: 20px 10px 40px;
+}
+.mypastOrder .owl-item .pastOrders {
+    box-shadow: 0 10px 30px #ddd;
+}
+.mypastOrder .marginBoth {
+    padding: 25px 0 40px;
+}
+
+.orderdown a {
+    text-transform: capitalize;
+}
+
+.popInner ul {
+    display: flex;
+    justify-content: space-between;
+}
+.popInner ul li {
+    float: none;
+    margin: 0 30px 0 0;
+    display: block;
+    width: calc(100% / 6);
+}
+.popInner ul li a {
+    width: 100%;
+    padding: 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 140px;
+    box-shadow: 0 6px 30px #ddd;
+}
+.popInner ul li a img {
+    width: 85px;
+}
+
+.FilterBox {
+    padding: 20px 0 0 0;
+}
+.FilterBox h2 {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+.FilterBox .Search {
+    margin: 0 0 20px 0;
+    border: 1px solid #b1b1b1;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.FilterBox .Search span {
+    color: #6b6b6b;
+}
+.FilterBox .Search input {
+    width: 96%;
+    border: none;
+    outline: 0;
+    padding: 0 0 0 10px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Roboto;
+}
+.FilterBox aside {
+    padding: 0 15px;
+    margin: 0 0 25px 0;
+}
+.FilterBox aside h4 {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    line-height: 25px;
+    margin: 0 0 10px 0;
+}
+.FilterBox aside h4 span {
+    float: right;
+    color: #737373;
+    font-size: 12px;
+    font-weight: 400;
+}
+.FilterBox aside ol.Radios {
+    display: flex;
+}
+.FilterBox aside ol.Radios li {
+    position: relative;
+    width: 20%;
+    margin: 0 5px 0 0;
+}
+.FilterBox aside ol.Radios li input {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.FilterBox aside ol.Radios li span {
+    display: block;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 0;
+}
+.FilterBox aside ol.Radios li span i {
+    font-size: 11px;
+    margin: 0 2px 0 0;
+}
+.FilterBox aside ol.Radios li input:checked ~ span {
+    background-color: #ea1f97;
+    border-color: #ea1f97;
+    color: #fff;
+}
+.FilterBox aside ul.Checkboxx li {
+    position: relative;
+    width: 30%;
+    display: inline-block;
+    margin: 0 6px 10px 0;
+}
+.FilterBox aside ul.Checkboxx li input {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.FilterBox aside ul.Checkboxx li span {
+    display: block;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 8px 0;
+}
+.FilterBox aside ul.Checkboxx li input:checked ~ span {
+    background-color: #ea1f97;
+    border-color: #ea1f97;
+    color: #fff;
+}
+.FilterBox #accordion .card {
+    border: none;
+}
+.FilterBox #accordion .card + .card {
+    margin: 20px 0 0 0;
+}
+.FilterBox #accordion .card .card-header {
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 13px 20px;
+}
+.FilterBox #accordion .card .card-header:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-weight: 600;
+}
+.FilterBox #accordion .card .card-header h5 {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Roboto";
+    padding: 0 0;
+}
+
+.RestaurantArea .RestaurantRight {
+    border-left: 1px solid #ddd;
+    padding: 0 15px 0 0;
+}
+.RestaurantArea .RestaurantHead {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 25px;
+}
+.RestaurantArea .RestaurantHead h2 {
+    font-size: 23px;
+    font-family: "Roboto";
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.RestaurantArea .RestaurantHead h2 span {
+    font-size: 14px;
+    color: #ee1c23;
+    letter-spacing: 0;
+}
+
+.RestaurantBox {
+    display: flex;
+    padding: 20px 0 0 20px;
+    font-family: "Roboto";
+    cursor: pointer;
+}
+.RestaurantBox:focus{
+    outline: none;
+}
+.RestaurantBox + .RestaurantBox {
+    border-top: 1px solid #ddd;
+    margin: 20px 0 0 0;
+}
+.RestaurantBox:last-child {
+    padding-bottom: 20px;
+}
+.RestaurantBox figure {
+    width: 140px;
+    height: 140px;
+    margin: 0;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 3px 6px #ddd;
+    border-radius: 20px;
+}
+.RestaurantBox figcaption {
+    width: 85%;
+    padding: 0 0 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.RestaurantBox figcaption h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+}
+.RestaurantBox figcaption h3 a {
+    color: #000;
+}
+.RestaurantBox figcaption h4 {
+    font-size: 14px;
+    margin: 0 0 15px 0;
+}
+.RestaurantBox figcaption h4 img {
+    width: 22px;
+}
+.RestaurantBox figcaption h4 span {
+    color: #969696;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0 0 0 5px;
+}
+.RestaurantBox figcaption h5 {
+    font-size: 14px;
+    margin: 0 0 15px 0;
+    color: #676767;
+    font-weight: 400;
+}
+.RestaurantBox figcaption ul {
+    display: flex;
+}
+.RestaurantBox figcaption ul li {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 20px 0 0;
+}
+.RestaurantBox figcaption ul li img {
+    width: 20px;
+    margin: 0 6px 0 0;
+}
+.RestaurantBox figcaption ul li span.Price {
+    color: #ee1d23;
+    border-left: 2px solid #636363;
+    padding: 0 0 0 20px;
+}
+.RestaurantBox figcaption ul li span.Title {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 0 0 10px;
+}
+.RestaurantBox figcaption aside {
+    text-align: right;
+}
+.RestaurantBox figcaption aside a,.RestaurantBox figcaption aside span {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    box-shadow: 0 2px 4px #ddd;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    color: #ea1f97;
+}
+.RestaurantBox figcaption aside h6 {
+    margin: 10px 0 10px 0;
+    font-size: 15px;
+    font-family: poppins;
+    font-weight: 600;
+    text-align: left;
+}
+.RestaurantBox figcaption aside h6 img {
+    margin: 0 10px 0 0;
+}
+.RestaurantBox figcaption aside p {
+    font-size: 14px;
+    color: #676767;
+    font-weight: 400;
+    text-align: left;
+}
+
+.RestaurantPage {
+    margin: 70px 0 0 0;
+}
+
+.FavouriteArea .RestaurantHead {
+    padding: 30px 0;
+}
+.FavouriteArea .RestaurantBox {
+    padding-left: 0;
+}
+.FavouriteArea .RestaurantBox figure {
+    padding: 0;
+    box-shadow: none;
+    border-radius: 30px;
+}
+
+.RestaurantsDetailsArea {
+    padding: 70px 0 0;
+}
+.RestaurantsDetailsArea .RestaurantsDetailsHead aside {
+    border-radius: 0 0 35px 35px;
+}
+.RestaurantsDetailsArea .RestaurantsDetailsHead aside img {
+    width: 100%;
+}
+.RestaurantsDetailsArea .RestaurantsDetailsHead article {
+    display: flex;
+    padding: 20px 10px 0 60px;
+    overflow: inherit;
+}
+.RestaurantsDetailsArea .RestaurantsDetailsHead article figure {
+    width: 140px;
+    height: 140px;
+    margin: -80px 20px 0 0;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 3px 6px #ddd;
+    border-radius: 20px;
+}
+.RestaurantsDetailsArea .RestaurantsDetailsHead article figcaption {
+    width: 85%;
+}
+.RestaurantsDetailsArea .RestaurantsDetailsHead article figcaption span.Wishlist {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    box-shadow: 0 2px 4px #ddd;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    color: #ea1f97;
+    float: right;
+}
+.RestaurantsDetailsArea .RestaurantsDetailsHead article figcaption h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+}
+.RestaurantsDetailsArea .RestaurantsDetailsHead article figcaption h5 {
+    font-size: 14px;
+    margin: 0 0 15px 0;
+    color: #676767;
+    font-weight: 400;
+}
+.RestaurantsDetailsArea .RestaurantsDetailsHead article figcaption ul {
+    display: flex;
+    margin-bottom: 10px;
+}
+.RestaurantsDetailsArea .RestaurantsDetailsHead article figcaption ul li {
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0 30px 0 0;
+    display: flex;
+    align-items: center;
+}
+.RestaurantsDetailsArea .RestaurantsDetailsHead article figcaption ul li img {
+    width: auto;
+    margin: 0 10px 0 0;
+}
+.RestaurantsDetailsBody {
+    border-top: 1px solid #ddd;
+    margin: 20px 0 0 0;
+}
+
+.RestaurantsDetailsLeft {
+    border-right: 1px solid #ddd;
+    padding: 25px 15px;
+}
+.RestaurantsDetailsLeft .Search {
+    margin: 0 0 20px 0;
+    border: 1px solid #b1b1b1;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.RestaurantsDetailsLeft .Search span {
+    color: #6b6b6b;
+}
+.RestaurantsDetailsLeft .Search input {
+    width: 96%;
+    border: none;
+    outline: 0;
+    padding: 0 0 0 10px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Roboto;
+}
+.RestaurantsDetailsLeft h3 {
+    font-size: 17px;
+    margin: 0 0 15px 0;
+}
+.RestaurantsDetailsLeft ul li {
+    margin: 0 0 10px 0;
+}
+.RestaurantsDetailsLeft ul li a {
+    font-size: 15px;
+    display: block;
+    font-family: "Roboto";
+    color: #636363;
+    position: relative;
+    line-height: 27px;
+    cursor: pointer;
+}
+.RestaurantsDetailsLeft ul li a:after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #ea1f97;
+    right: -15px;
+    opacity: 0;
+    transition: 0.5s all ease-in-out;
+}
+.RestaurantsDetailsLeft ul li a:hover {
+    color: #ea1f97;
+}
+.RestaurantsDetailsLeft ul li a:hover:after {
+    opacity: 1;
+}
+
+.RestaurantsDetailsRight {
+    padding: 25px 0 50px;
+}
+.RestaurantsDetailsRight .RestaurantsDetailsCart {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 0 30px;
+}
+.RestaurantsDetailsRight .RestaurantsDetailsCart aside {
+    display: flex;
+    align-items: center;
+}
+.RestaurantsDetailsRight .RestaurantsDetailsCart aside p {
+    font-size: 13px;
+    color: #ea1f97;
+    font-family: "Roboto";
+}
+.RestaurantsDetailsRight .RestaurantsDetailsCart aside a {
+    background-color: #ea1f97;
+    color: #fff;
+    border-radius: 50px;
+    min-width: 300px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 0 20px;
+}
+.RestaurantsDetailsRight .RestaurantsDetailsCart aside a p {
+    font-size: 12px;
+    color: #fff;
+}
+.RestaurantsDetailsRight .RestaurantsDetailsCart aside a h5 {
+    font-size: 13px;
+}
+.RestaurantsDetailsRight .RestaurantsDetailsCart aside a h6 {
+    font-size: 12px;
+}
+.RestaurantsDetailsRight .card {
+    border: none;
+    border-radius: 0;
+}
+.RestaurantsDetailsRight .card + .card {
+    margin-top: 15px;
+}
+.RestaurantsDetailsRight .card .card-header {
+    border: none;
+    background-color: #ecedf5;
+    padding: 14px 30px;
+    border-radius: 0;
+    cursor: pointer;
+}
+/* .RestaurantsDetailsRight .card .card-header.collapsed:after {
+    transform: rotate(180deg);
+}
+ */
+
+ .RestaurantsDetailsRight .card .card-header:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 15px;
+    top: 11px;
+    font-weight: 600;
+    transition: 0.5s all ease-in-out;
+}
+
+.RestaurantsDetailsRight .card .card-header[aria-expanded="true"]:after{
+    transform: rotate( 180deg );
+}
+
+
+ 
+
+.RestaurantsDetailsRight .card .card-header h5 {
+    font-size: 16px;
+    font-weight: 500;
+}
+.RestaurantsDetailsRight .card .card-body {
+    padding: 0;
+}
+
+.DishList {
+    font-family: "Roboto";
+}
+.DishList article {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    overflow: inherit;
+}
+.DishList article + article:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 1px;
+    background-color: gainsboro;
+    z-index: 1;
+}
+.DishList article .DishLeft {
+    display: flex;
+    width: 75%;
+}
+.DishList article .DishLeft figure {
+    margin: 0;
+    width: 115px;
+    height: 115px;
+}
+.DishList article .DishLeft figcaption {
+    width: 79%;
+    padding: 0 0 0 20px;
+}
+.DishList article .DishLeft figcaption h3 {
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.DishList article .DishLeft figcaption p {
+    font-size: 13px;
+    line-height: 23px;
+    color: var(--grey);
+}
+.DishList article .DishRight h4 span {
+    background-color: #ea1f97;
+    color: #fff;
+    font-size: 13px;
+    padding: 8px 20px;
+    display: block;
+    border-radius: 50px;
+    box-shadow: 0 5px 7px #f795cf;
+}
+.DishList article .DishRight .Spinner {
+    margin: 30px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.DishList article .DishRight .Spinner .Button {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 35px;
+}
+.DishList article .DishRight .Spinner .Button:hover {
+    border-color: #ea1f97;
+    color: #ea1f97;
+}
+.DishList article .DishRight .Spinner .Text {
+    width: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.number-spinner {
+    display: flex;
+}
+.number-spinner button {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    padding: 0;
+    outline: 0;
+    box-shadow: none !important;
+}
+.number-spinner button:hover {
+    border-color: #ea1f97;
+    color: #ea1f97;
+}
+.number-spinner input {
+    width: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    outline: 0;
+    border: none;
+}
+
+.CheckoutArea {
+    padding: 90px 0 0;
+}
+
+.ProductBox {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 7px 20px #ddd;
+    border-radius: 35px;
+    padding: 25px 30px;
+    font-family: "Roboto";
+}
+.ProductBox article {
+    display: flex;
+}
+.ProductBox article figure {
+    width: 85px;
+    margin: 0;
+}
+.ProductBox article figcaption {
+    padding: 0 0 0 20px;
+}
+.ProductBox article figcaption h3 {
+    font-size: 16px;
+    color: #000;
+    font-family: "Roboto";
+    margin: 0 0 10px 0;
+}
+.ProductBox article figcaption p {
+    font-size: 13px;
+}
+.ProductBox article figcaption h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    margin: 15px 0 0 0;
+}
+.ProductBox aside {
+    text-align: right;
+}
+.ProductBox aside a {
+    color: #000;
+    font-size: 20px;
+}
+.ProductBox aside .number-spinner {
+    margin: 25px 0 0 0;
+}
+
+.CheckoutBox {
+    margin-top: 50px;
+}
+.CheckoutBox h2 {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+}
+.CheckoutBox .Special aside {
+    padding: 0 0 0 45px;
+    display: flex;
+}
+.CheckoutBox .Special aside + aside {
+    margin-top: 15px;
+}
+.CheckoutBox .Special aside .CheckBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.CheckoutBox .Special aside h5 {
+    font-family: "Roboto";
+    color: #000;
+    font-weight: 500;
+    margin: 0 0 0 15px;
+    font-size: 16px;
+    line-height: 23px;
+}
+.CheckoutBox .Special aside h5 span {
+    display: block;
+    color: #959ba4;
+    font-size: 13px;
+    font-family: poppins;
+    font-weight: 400;
+}
+
+.CheckoutBox .Address {
+    display: flex;
+}
+.CheckoutBox .Address aside {
+    min-width: 325px;
+    padding: 20px 20px 20px 60px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 30px #ddd;
+    margin: 0 50px 0 0;
+}
+.CheckoutBox .Address aside .Radio {
+    position: absolute;
+    top: 23px;
+    left: 20px;
+}
+.CheckoutBox .Address aside h3 {
+    margin: 0 0 15px 0;
+    color: #000;
+    font-weight: 400;
+        font-size: 21px;
+    font-family: 'poppins';
+ font-weight: 600;
+}
+.CheckoutBox .Address aside h3 a {
+    float: right;
+    color: #000;
+}
+.CheckoutBox .Address aside p {
+    position: relative;
+    padding: 0 0 0 30px;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0 0 0 0;
+    color: #757575;
+}
+.CheckoutBox .Address aside p span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+}
+.CheckoutBox .Address aside p + p {
+    margin-top: 10px;
+}
+
+.CheckoutBox .TimeBox ul {
+    margin: 0 0 20px 0;
+}
+.CheckoutBox .TimeBox ul li {
+    position: relative;
+    margin: 0 15px 0 0;
+    display: inline-block;
+}
+.CheckoutBox .TimeBox ul li input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+.CheckoutBox .TimeBox ul li span {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-width: 105px;
+    display: block;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 14px;
+    font-family: "Roboto";
+    color: #737373;
+}
+.CheckoutBox .TimeBox ul li input:checked ~ span {
+    background-color: #ea1f97;
+    border-color: #ea1f97;
+    color: #fff;
+}
+.CheckoutBox .TimeBox p {
+    font-size: 14px;
+    padding-bottom: 14px;
+}
+.CheckoutBox .TimeBox p img {
+    width: 24px;
+    margin: 0 10px 0 0;
+}
+
+.CheckoutBox .CodeBox {
+    box-shadow: 0 2px 7px #ddd;
+    padding: 20px 25px;
+    max-width: 350px;
+    border-radius: 9px;
+    display: flex;
+}
+.CheckoutBox .CodeBox input {
+    width: 100%;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+.CheckoutBox .CodeBox button {
+    outline: 0;
+    background-color: #fff;
+    border: none;
+    box-shadow: none;
+    font-size: 12px;
+    color: #ea1f97;
+    font-weight: 500;
+}
+
+.CheckoutBox .PaymentBox .PaymentBoxLeft ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 15px 0;
+}
+.CheckoutBox .PaymentBox .PaymentBoxLeft ul li .Icon {
+    display: flex;
+    align-items: center;
+}
+.CheckoutBox .PaymentBox .PaymentBoxLeft ul li .Icon span {
+    width: 55px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 3px #ddd;
+    border-radius: 5px;
+    padding: 6px 12px;
+}
+.CheckoutBox .PaymentBox .PaymentBoxLeft ul li .Icon p {
+    font-size: 15px;
+    font-family: "Roboto";
+    font-weight: 500;
+    margin: 0 0 0 20px;
+}
+.CheckoutBox .PaymentBox .PaymentBoxRight {
+    padding: 50px;
+    box-shadow: -1px -29px 30px #ddd;
+    border-radius: 50px 50px 0 0;
+    font-family: "Roboto";
+    width: 90%;
+    margin: auto;
+}
+.CheckoutBox .PaymentBox .PaymentBoxRight p {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+.CheckoutBox .PaymentBox .PaymentBoxRight p span {
+    float: right;
+    font-weight: 500;
+}
+.CheckoutBox .PaymentBox .PaymentBoxRight p:nth-child(3) {
+    color: #ea1f97;
+}
+.CheckoutBox .PaymentBox .PaymentBoxRight h4 {
+    font-size: 18px;
+    margin: 0 0 25px 0;
+    font-weight: 400;
+}
+.CheckoutBox .PaymentBox .PaymentBoxRight h4 span {
+    float: right;
+    font-size: 18px;
+    font-weight: 500;
+}
+.CheckoutBox .PaymentBox .PaymentBoxRight a {
+    display: block;
+    background-color: #ea1f97;
+    text-align: center;
+    color: #fff;
+    padding: 16px 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px #e09cc4;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Roboto";
+    letter-spacing: 0.5px;
+}
+
+.ModalBox #ChoiceModal {
+}
+.ModalBox #ChoiceModal .modal-dialog {
+    max-width: 650px;
+}
+.ModalBox #ChoiceModal .modal-dialog .modal-content {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+.ModalBox #ChoiceModal .ChoiceBox .ChoiceHead {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.ModalBox #ChoiceModal .ChoiceBox .ChoiceHead h4 {
+    font-size: 18px;
+    font-family: "Roboto";
+}
+.ModalBox #ChoiceModal .ChoiceBox .ChoiceHead button, button.close {
+    float: none;
+    /* margin: -10px 0 0 0; */
+    font-size: 30px;
+    color: #000;
+    font-weight: 700;
+    outline: 0;
+}
+.ModalBox #ChoiceModal .ChoiceBox .DishList article {
+    padding: 20px 20px;
+}
+.ModalBox #ChoiceModal .ChoiceBox .DishList article .DishLeft figcaption {
+    padding: 0;
+}
+.ModalBox #ChoiceModal .ChoiceBox .DishList article .DishRight h4 span {
+    font-size: 13px;
+    padding: 7px 0;
+    text-align: center;
+    box-shadow: 0 5px 7px #f795cf;
+}
+.ModalBox #ChoiceModal .ChoiceBox .DishList article .DishRight .Spinner {
+    margin-top: 20px;
+}
+.ModalBox #ChoiceModal .ChoiceBox .ChoiceFooter {
+    border-top: 1px solid #ddd;
+    padding: 15px 20px;
+}
+.ModalBox #ChoiceModal .ChoiceBox .ChoiceFooter h3 {
+    margin: 0 0 15px 0;
+    font-size: 17px;
+    font-weight: 400;
+}
+.ModalBox #ChoiceModal .ChoiceBox .ChoiceFooter ul li {
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    padding: 0 0 10px 0;
+    margin: 0 0 10px 0;
+}
+.ModalBox #ChoiceModal .ChoiceBox .ChoiceFooter ul li span {
+    float: right;
+    /* border: 1px solid #ddd; */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.ModalBox #ChoiceModal .ChoiceBox .ChoiceFooter ul li input {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+.ModalBox #ChoiceModal .ChoiceBox .ChoiceFooter .Add {
+    min-width: 250px;
+    display: block;
+    width: 250px;
+    margin: 50px auto 50px;
+    text-align: center;
+    background-color: #ea1f97;
+    color: #fff;
+    padding: 12px 0;
+    border-radius: 50px;
+    box-shadow: 0 10px 18px #ddd;
+}

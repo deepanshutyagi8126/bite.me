@@ -1,0 +1,16 @@
+<svg id="calendar_5_" data-name="calendar (5)" xmlns="http://www.w3.org/2000/svg" width="23.812" height="23.813" viewBox="0 0 23.812 23.813">
+  <g id="Group_37200" data-name="Group 37200">
+    <g id="Group_37199" data-name="Group 37199">
+      <path id="Path_39147" data-name="Path 39147" d="M279,281.046a1.862,1.862,0,0,0,1.86,1.86h2.186a1.862,1.862,0,0,0,1.86-1.86V278.86a1.862,1.862,0,0,0-1.86-1.86H280.86a1.862,1.862,0,0,0-1.86,1.86Zm1.86-2.186h2.186v2.186H280.86Z" transform="translate(-266.024 -264.117)" fill="#444251"/>
+      <circle id="Ellipse_2128" data-name="Ellipse 2128" cx="0.5" cy="0.5" r="0.5" transform="translate(16.913 9.188)" fill="#444251"/>
+      <ellipse id="Ellipse_2129" data-name="Ellipse 2129" cx="1" cy="0.5" rx="1" ry="0.5" transform="translate(12.913 9.188)" fill="#444251"/>
+      <path id="Path_39148" data-name="Path 39148" d="M22.882,16.371a.93.93,0,0,0,.93-.93V5.581A3.725,3.725,0,0,0,20.092,1.86H18.883V.93a.93.93,0,0,0-1.86,0v.93H12.79V.93a.93.93,0,0,0-1.86,0v.93H6.744V.93a.93.93,0,0,0-1.86,0v.93H3.721A3.725,3.725,0,0,0,0,5.581V20.092a3.725,3.725,0,0,0,3.721,3.721H20.092a3.725,3.725,0,0,0,3.721-3.721.93.93,0,0,0-1.86,0,1.862,1.862,0,0,1-1.86,1.86H3.721a1.862,1.862,0,0,1-1.86-1.86V5.581a1.862,1.862,0,0,1,1.86-1.86H4.883v.93a.93.93,0,0,0,1.86,0v-.93H10.93v.93a.93.93,0,0,0,1.86,0v-.93h4.232v.93a.93.93,0,0,0,1.86,0v-.93h1.209a1.862,1.862,0,0,1,1.86,1.86v9.86A.93.93,0,0,0,22.882,16.371Z" fill="#444251"/>
+      <circle id="Ellipse_2130" data-name="Ellipse 2130" cx="0.5" cy="0.5" r="0.5" transform="translate(5.913 17.188)" fill="#444251"/>
+      <circle id="Ellipse_2131" data-name="Ellipse 2131" cx="0.5" cy="0.5" r="0.5" transform="translate(5.913 9.188)" fill="#444251"/>
+      <circle id="Ellipse_2132" data-name="Ellipse 2132" cx="0.5" cy="0.5" r="0.5" transform="translate(5.913 13.188)" fill="#444251"/>
+      <ellipse id="Ellipse_2133" data-name="Ellipse 2133" cx="1" cy="0.5" rx="1" ry="0.5" transform="translate(8.913 13.188)" fill="#444251"/>
+      <ellipse id="Ellipse_2134" data-name="Ellipse 2134" cx="1" cy="0.5" rx="1" ry="0.5" transform="translate(8.913 9.188)" fill="#444251"/>
+      <ellipse id="Ellipse_2135" data-name="Ellipse 2135" cx="1" cy="0.5" rx="1" ry="0.5" transform="translate(8.913 17.188)" fill="#444251"/>
+    </g>
+  </g>
+</svg>
